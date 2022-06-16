@@ -1,0 +1,18 @@
+print("welcome to star count game ")
+print("how many row you want to print")
+inp1 = int(input())
+print("type 1 or 0")
+inp2 = int(input())
+new = bool(inp2)
+if new == True:
+    for i in range(1,inp1+1):
+        print(i)
+        for j in range(1, i+1):
+            print("*",end=" ")
+        print()
+elif new == False:
+    for i in range(inp1,0,-1):
+        print(i)
+        for j in range(1,i+1):
+            print("*",end="")
+        print()
